@@ -1,0 +1,33 @@
+.homeroadmap_container .title{
+    width: 100%;
+}
+
+
+.roadmap_line_container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+}
+
+.margin20{
+    margin-left: 20%;
+}
+
+.roadmap_line_container > .upper , .roadmap_line_container > .lower{
+    display: flex;
+    flex-direction: row;
+}
+
+.roadmap_line_container >.upper> .quater_container , .roadmap_line_container >.lower> .quater_container{
+   
+    width: 30%;
+    height: 300px;
+   
+}
+
+.roadmap_line_container > .roadmap_line {
+    width: 100%;
+    border: 1px solid var(--clr-pink);
+}

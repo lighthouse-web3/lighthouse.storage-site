@@ -1,0 +1,45 @@
+.hometeam_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  
+  .hometeam_container > .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .title > .description__text {
+    color: white;
+  }
+
+  .team_members{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+
+  
+  @media screen and (max-width: 800px) {
+    .title {
+      width: 90%;
+    }
+    .title > .title__text {
+      font-size: 2rem;
+    }
+  
+    .title > .description__text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+  }
+  

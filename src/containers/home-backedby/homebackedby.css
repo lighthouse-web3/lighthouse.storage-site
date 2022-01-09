@@ -1,0 +1,43 @@
+.home_backedby_container{
+    width: 100%;
+    z-index: 1;
+}
+
+.home_backedby_container > .title {
+    width: 100%;
+}
+
+.home_backedby_container > .logo_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0rem;
+
+}
+
+.logo_container > .org_logo{
+    width: min(400px , 35%);
+    height: auto;
+    padding: 0rem 2rem;
+    background: white;
+    border-radius: 12px;
+    height: 120px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .home_backedby_container > .logo_container{
+        flex-direction: column;
+        margin: 1rem 0rem;
+
+    }
+    .logo_container > .org_logo{
+        width: 70%;
+        height: auto;
+        margin: 1rem;
+        object-fit: contain;
+    }
+  
+  }

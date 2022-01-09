@@ -1,0 +1,79 @@
+.banner_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%);
+}
+
+.banner_Image {
+  width: 100%;
+  margin: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.banner_Image > img {
+  width: 90%;
+  height: auto;
+}
+.homebanner {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  width: 50%;
+  font-family: var(--font-primary);
+  text-align: center;
+}
+.title > .title__text {
+  font-size: 3.5rem;
+  font-family: var(--font-primary);
+}
+
+.title > p {
+  margin: 1rem 0rem;
+}
+
+.title > .description__text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    width: 90%;
+  }
+  .title > .title__text {
+    font-size: 2.5rem;
+  }
+
+  .title > .description__text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .banner_Image{
+      margin: 2rem 1rem;
+  }
+
+  .banner_Image > img {
+    width: 100%;
+  }
+
+  .banner-overlay {
+    height: 35%;
+  }
+}

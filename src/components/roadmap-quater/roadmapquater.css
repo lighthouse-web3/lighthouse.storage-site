@@ -1,0 +1,104 @@
+.roadmap_quater_box{
+    border-left: 1px solid var(--clr-pink);
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.roadmap_quater_box > .circle{
+    position: absolute;
+    font-size: 10px;
+    left: -5px;
+    color: var(--clr-pink);
+    box-shadow: 0px 0px 20px 2px var(--clr-pink);
+}
+
+.roadmap_quater_box > .concentric_circle{
+    position: absolute;
+    font-size: 10px;
+    left: -13px;
+    color: var(--clr-pink);
+    box-shadow: 0px 0px 20px 2px var(--clr-pink);
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.roadmap_quater_box > .quater_name{
+    position: absolute;
+    font-size: 1rem;
+    left: -25px;
+    color: white;
+    font-family: var(--font-primary);
+}
+.roadmap_quater_box > .current_quater{
+    font-size: 1.1rem;
+    color: var(--clr-pink);
+}
+
+
+
+.roadmap_quater_box > .text-box{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    font-family: var(--font-primary);
+}
+
+.roadmap_quater_box > .text-box > .quater-title {
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.roadmap_quater_box > .text-box > table> .points> .bullet{
+    width: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    color: var(--font-primary);
+}
+
+.roadmap_quater_box > .text-box > table> .points{
+    width: 75%;
+    color: var(--clr-roadmap-text);
+}
+
+/* -------------- */
+
+.upper{
+    align-items: flex-start;
+}
+
+.upper > .circle {
+    bottom: -5px;
+}
+.upper > .concentric_circle {
+    bottom: -13px;
+}
+
+.upper > .quater_name{
+    bottom: -30px;
+}
+
+.lower{
+    align-items: flex-end;
+}
+
+.lower > .circle {
+    top: -5px;
+}
+.lower > .concentric_circle {
+    top: -13px;
+}
+
+.lower > .quater_name{
+    top: -30px;
+}

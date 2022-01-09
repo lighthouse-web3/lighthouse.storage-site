@@ -1,0 +1,83 @@
+.featurepoint_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 2rem 0rem;
+    flex-direction: row-reverse;
+}
+
+.container_row{
+    flex-direction: row;
+}
+
+.container_row-reverse{
+    flex-direction: row-reverse;
+}
+
+.featurepoint_container > .image_container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container > img{
+    width: 50%;
+    height: auto;
+    max-height: 400px;
+}
+.featurepoint_container > .text_container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text_container > .title , .text_container > .description{
+    width: 75%;
+   
+}
+
+.text_container > .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.text_container > .description {
+    font-family: var(--font-primary);
+font-style: normal;
+font-weight: normal;
+font-size:calc(17px + 1 * ((100vw - 320px) / 680));;
+letter-spacing: 0.2px;
+line-height: 25px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .featurepoint_container{
+        flex-direction: column;
+        margin: 4rem 0rem;
+    }
+
+    .featurepoint_container>.text_container{
+        width: 100%;
+    }
+
+    .text_container>.title , .text_container > .description{
+        text-align: center;
+
+    }
+
+    .image_container > img{
+        width: 90%;      
+    }
+   
+  
+}

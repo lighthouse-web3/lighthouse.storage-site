@@ -1,0 +1,78 @@
+.roadmap_mobile_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.table_container {
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.points_table {
+  width: 75%;
+  margin: 2rem 0rem;
+  padding: 0;
+}
+
+.points_table > tr > .line {
+  width: 50px;
+  border-right: 1.5px solid var(--clr-pink);
+  position: relative;
+}
+
+.points_table > tr > .line > .pointer {
+  position: absolute;
+  font-size: 10px;
+  top: calc(50% - 5px);
+  right: -6px;
+  color: var(--clr-pink);
+}
+
+
+.points_table > tr > .text {
+  color: white;
+  font-size: calc(17px + 1 * ((100vw - 320px) / 680));
+  line-height: 26px;
+  padding: 2rem 4rem;
+  font-family: var(--font-primary);
+  font-weight: 400;
+
+}
+
+.points_table > tr > .text >.gradient__text{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.points_table > tr > .text >.current_milestone{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.points_table > tr > .text > table> .points> .bullet{
+    width: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.points_table > tr > .text > table> .points{
+    width: 75%;
+    color: var(--clr-roadmap-text);
+}
+
+@media screen and (max-width: 800px) {
+
+
+  .points_table{
+      width: 100%;
+  }
+
+  .points_table > tr > .line {
+    width: 15px;
+  }
+
+  .points_table > tr > .text {
+    padding: 2rem 2rem;
+  }
+}

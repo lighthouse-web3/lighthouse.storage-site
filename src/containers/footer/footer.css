@@ -1,0 +1,96 @@
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    min-height: 350px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 10.73%);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container > .site-details{
+    width: 75%;
+    display: flex;
+    flex-direction: row;    
+}
+.footer-container > .site-details > .site_map , .footer-container > .site-details > .policies {
+    width: 50%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-container > .site-details > .site_map > p , .footer-container > .site-details > .policies > p {
+    margin: 15px 0px;
+    cursor: pointer;
+   
+}
+
+.footer-container > .site-details > .site_map > .f_title , .footer-container > .site-details > .policies > .f_title {
+    font-size: 1.4rem;
+    cursor: auto;
+}
+.footer-container > .contact-details{
+    width: 25%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+.footer-container > .contact-details > .set{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    font-size: 1rem;
+}
+
+.footer-container > .contact-details > .set > .icon{
+    margin-right: 10px;
+    font-size: 30px;
+}
+.footer-container > .contact-details > .set > .social{
+    margin-right: 10px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+    .footer-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-container > .site-details{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container > .site-details > .site_map , .footer-container > .site-details > .policies {
+        width: 100%;
+    }
+
+    .footer-container > .site-details > .site_map > .f_title , .footer-container > .site-details > .policies > .f_title {
+        border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    }
+
+
+    .footer-container > .contact-details{
+      width: 100%;
+      border-top: 1px solid white;
+      padding-top: 10px;
+    }
+
+    
+   
+    
+}

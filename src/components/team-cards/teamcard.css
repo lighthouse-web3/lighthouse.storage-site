@@ -1,0 +1,47 @@
+.team_card_container{
+    width: fit-content;
+    min-width: 250px;
+    height: fit-content;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin: 1rem;
+}
+
+.team_card_container > img {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.member_info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member_info > .member_name{
+    color: white;
+    font-size:  1.5rem;
+    font-family: var(--font-primary);
+}
+
+.icons > .social_icon{
+    font-size: 30px;
+    color: white;
+}
+
+.icons > .social_icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+   
+  
+  }
