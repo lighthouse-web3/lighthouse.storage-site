@@ -10,7 +10,7 @@ function Homebanner() {
                     <p className='gradient__text title__text'>Permanent Storage Redefined</p>
 
                     <p className='description__text'>
-                        Lighthouse allows users to store their data into our decentralized networkfor lifetime at a fixed price
+                        Lighthouse allows users to store their files on decentralized network for lifetime at a fixed price
                     </p>
                 </div>
             </div>
