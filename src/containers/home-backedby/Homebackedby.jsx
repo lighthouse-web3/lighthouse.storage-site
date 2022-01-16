@@ -10,7 +10,7 @@ function Homebackedby() {
                 <p className='gradient__text title__text'>Backed By</p>
 
                 <p className='description__text'>
-                    We are backed by some of the most prestegious organisations
+                    
                 </p>
             </div>
 
