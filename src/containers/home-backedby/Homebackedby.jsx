@@ -9,9 +9,9 @@ function Homebackedby() {
             <div className="title">
                 <p className='gradient__text title__text'>Backed By</p>
 
-                <p className='description__text'>
+//                 <p className='description__text'>
                     
-                </p>
+//                 </p>
             </div>
 
             <div className="logo_container">
