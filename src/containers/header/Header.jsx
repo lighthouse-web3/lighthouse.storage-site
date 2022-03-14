@@ -24,9 +24,7 @@ function Header() {
                 <div className="navbar__link__logo">
                   <img
                       src="/logo.png"
-                      alt="brandLogo"
-                      width="62.56px"
-                      height="16.2px"
+                        alt="brandLogo"
                   />
                   <p className="gradient__text">Lighthouse</p>
               </div>
@@ -46,6 +44,9 @@ function Header() {
                   <p>
                       <a href="#team">Team</a>
                   </p>
+                    <p>
+                        <a href="https://files.lighthouse.storage/">Upload</a>
+                    </p>
               </div>
           </div>
           <div className="navbar__button">

@@ -17,10 +17,11 @@
   margin-right: 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .navbar__link__logo img{
-  width: 25px;
+  width: 70px;
   height: auto;
 }
 .navbar__link__logo p{
