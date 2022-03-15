@@ -45,7 +45,7 @@ function Header() {
                       <a href="#team">Team</a>
                   </p>
                     <p>
-                        <a href="https://files.lighthouse.storage/">Upload</a>
+                        <a href="https://files.lighthouse.storage/">Files DApp</a>
                     </p>
               </div>
           </div>
@@ -58,7 +58,7 @@ function Header() {
                       )
                   }
               >
-                  Get Started
+                    Documentation
               </button>
           </div>
           <div className="navbar__mobile__menu">
