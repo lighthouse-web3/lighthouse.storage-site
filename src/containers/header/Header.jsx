@@ -45,7 +45,7 @@ function Header() {
                       <a href="#team">Team</a>
                   </p>
                     <p>
-                        <a href="https://files.lighthouse.storage/">Upload</a>
+                        <a href="https://lighthouse-storage.gitbook.io/lighthouse/">Documentation</a>
                     </p>
               </div>
           </div>
@@ -53,12 +53,12 @@ function Header() {
               <button
                   onClick={() =>
                       window.open(
-                          "https://lighthouse-storage.gitbook.io/lighthouse/",
+                          "https://files.lighthouse.storage/",
                           "_blank"
                       )
                   }
               >
-                  Get Started
+                    File Storage Dapp
               </button>
           </div>
           <div className="navbar__mobile__menu">

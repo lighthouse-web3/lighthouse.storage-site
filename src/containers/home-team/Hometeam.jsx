@@ -23,7 +23,7 @@ function Hometeam() {
                 <p className='gradient__text title__text'>Our Team</p>
 
                 <p className='description__text'>
-                    Lighthouse community is lead by builders
+                    Company is not defined by the things they do but by the team it is done by
                 </p>
             </div>
 
