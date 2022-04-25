@@ -3,24 +3,21 @@ import './footer.css';
 import { MdLocationOn, MdMailOutline } from 'react-icons/md'
 
 import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom';
+
 
 function Footer() {
+    const _navigate = useNavigate();
     return (
         <div className='footer-container section__padding'>
             <div className="site-details">
                 <div className="site_map">
                     <p className='f_title'>Sitemap</p>
                     <p>
-                        <a href="#home">Home</a>
+                        <a onClick={() => { _navigate('/') }} >Home</a>
                     </p>
                     <p>
-                        <a href="#cli">CLI</a>
-                    </p>
-                    <p>
-                        <a href="#features">Features</a>
-                    </p>
-                    <p>
-                        <a href="#team">Team</a>
+                        <a onClick={() => { _navigate('/about-us') }} >About us</a>
                     </p>
                 </div>
                 <div className="policies">

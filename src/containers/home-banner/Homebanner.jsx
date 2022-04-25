@@ -12,6 +12,13 @@ function Homebanner() {
                     <p className='description__text'>
                         Lighthouse allows users to store their files on decentralized network for lifetime at a fixed price
                     </p>
+
+                    <div className="description__emailText">Enter your Email to get update from lighthouse</div>
+
+                    <div className="description_email">
+                        <input type="text" />
+                        <button>Get Updates</button>
+                    </div>
                 </div>
             </div>
 

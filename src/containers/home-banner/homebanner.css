@@ -51,6 +51,37 @@
   font-weight: 300;
   line-height: 1.5;
 }
+.title>.description_email {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 14px 0px;
+}
+
+.title>.description_email>input[type='text'] {
+  height: 30px;
+  /* margin: 10px 0px; */
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+}
+
+.title>.description_email>button {
+  padding: 6px px 1.2em;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #ffffff;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  background: var(--gradient);
+  box-shadow: 0px 4px 31px rgb(0 0 0 / 15%);
+  border: none;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 800px) {
   .title {
