@@ -1,39 +1,15 @@
 import React from "react";
-import {
-  Header,
-  Footer,
-  Homebanner,
-  Homepackage,
-  Hometeam,
-  Homebackedby,
-  Homekeydiffrence,
-  Homekeyfeatures,
-  Homeroadmap,
-} from "./containers";
-
-import { DiscordFloat } from "./components";
 import "./App.css";
+import HomePage from "./pages/home/home";
+import { Routes, Route } from "react-router-dom";
+import AboutPage from "./pages/about/about";
 
 function App() {
   return (
-    <div className="app">
-      {/* <title>{"TITLE"}</title> */}
-      {/* <div className="bg_pattern"></div> */}
-      <div className="bg_pattern2"></div>
-      <div className="bg_pattern3"></div>
-      <div className="bg_pattern4"></div>
-      <div className="bg_pattern5"></div>
-      <Header />
-      <Homebanner />
-      <Homepackage />
-      <Homekeyfeatures />
-      <Homekeydiffrence />
-      <Homeroadmap />
-      <Hometeam />
-      <Homebackedby />
-      <Footer />
-      <DiscordFloat />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />}></Route>
+      <Route path="/about-us" element={<AboutPage />}></Route>
+    </Routes>
   );
 }
 

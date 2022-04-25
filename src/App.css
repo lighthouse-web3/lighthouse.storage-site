@@ -7,14 +7,8 @@
 
 body {
     background: var(--bg-clr);
-    /* background-image: url('../public/banner-bg-loop.png');
-    background-position: top;
-    background-size: cover; */
 }
 
-.app{
-    position: relative;
-}
 
 .bg_pattern{
     z-index: -1;

@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import { RiMenuFill, RiCloseLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
+
 
 function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [scrollTop, setScrollTop] = useState();
     const [scrolling, setScrolling] = useState();
+    const _navigate = useNavigate();
     useEffect(() => {
         const onScroll = (e) => {
             setScrollTop(e.target.documentElement.scrollTop);
@@ -30,9 +33,12 @@ function Header() {
               </div>
               <div className="navbar_links_container">
                   <p>
-                      <a href="#home">Home</a>
+                        <a onClick={() => { _navigate('/') }}>Home</a>
                   </p>
                   <p>
+                        <a onClick={() => { _navigate('/about-us') }}>About us</a>
+                    </p>
+                    {/* <p>
                       <a href="#cli">CLI</a>
                   </p>
                   <p>
@@ -43,7 +49,10 @@ function Header() {
                   </p>
                   <p>
                       <a href="#team">Team</a>
-                  </p>
+                  </p> */}
+                    <p>
+                        <a href="https://airtable.com/shrPFC2TgojuOAYO4">Contact us</a>
+                    </p>
                     <p>
                         <a href="https://lighthouse-storage.gitbook.io/lighthouse/">Documentation</a>
                     </p>
