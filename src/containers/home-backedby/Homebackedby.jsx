@@ -2,7 +2,7 @@ import React from 'react'
 import './homebackedby.css'
 
 function Homebackedby() {
-    const organisationLogos = ['protocol_labs.png', 'long-hash-ventures.png', 'Big_Brain.png', 'Fenbushi_Capital.png', 'Formless.png', 'mask_network.svg', 'NGC.png', '2Link.jpg']
+    const organisationLogos = ['protocol_labs.png', 'long-hash-ventures.png', 'Big_Brain.png', 'Fenbushi_Capital.png', 'Formless.png', 'mask_network.svg', 'NGC.png', '2Link.jpg', 'hashcib.jpg']
     return (
         <div className='section__padding home_backedby_container'>
 
