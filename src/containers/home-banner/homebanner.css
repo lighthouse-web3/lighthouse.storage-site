@@ -55,7 +55,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 14px 0px;
+  margin: 20px 0px;
+  margin-top: 2.5rem;
 }
 
 .title>.description_email>input[type='text'] {

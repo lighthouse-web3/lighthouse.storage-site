@@ -23,7 +23,7 @@ function AboutPage() {
             <div className="bg_pattern4"></div>
             <div className="bg_pattern5"></div>
             <Header />
-            <Homeroadmap />
+
             <AboutAngels />
             <Hometeam />
             <Homebackedby />

@@ -26,6 +26,7 @@ function HomePage() {
             <Homepackage />
             <Homekeyfeatures />
             <Homekeydiffrence />
+            <Homeroadmap />
             {/* <Homeroadmap />
             <Hometeam />
             <Homebackedby /> */}

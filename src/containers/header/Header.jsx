@@ -51,10 +51,10 @@ function Header() {
                       <a href="#team">Team</a>
                   </p> */}
                     <p>
-                        <a href="https://airtable.com/shrPFC2TgojuOAYO4">Contact us</a>
+                        <a href="https://airtable.com/shrPFC2TgojuOAYO4" target="_blank" rel="noopener noreferrer">Contact us</a>
                     </p>
                     <p>
-                        <a href="https://lighthouse-storage.gitbook.io/lighthouse/">Documentation</a>
+                        <a href="https://lighthouse-storage.gitbook.io/lighthouse/" target="_blank" rel="noopener noreferrer">Documentation</a>
                     </p>
               </div>
           </div>
