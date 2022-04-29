@@ -110,7 +110,12 @@
     .navbar__mobile__menu{
         display: block;
     }
-    
+
+    .navbar__link__logo p {
+      font-size: 20px;
+      font-family: var(--font-primary);
+      margin: 0px 0px;
+    }
 }
 
 

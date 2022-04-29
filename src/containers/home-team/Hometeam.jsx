@@ -6,15 +6,33 @@ function Hometeam() {
     const teamArr = [
         {
             name: 'Nandit',
-            image: '/nandit.jpg',
+            image: '/team/nandit.jpg',
             linkedin: 'https://linkedin.com',
             tweeter: 'https://twitter.com/nanditmehra'
         },
         {
             name: 'Ravish',
-            image: '/ravish.jpg',
+            image: '/team/ravish.png',
             linkedin: 'https://linkedin.com',
             tweeter: 'https://twitter.com/ravish1729'
+        },
+        {
+            name: 'Arpit',
+            image: '/team/arpit.png',
+            linkedin: 'https://linkedin.com',
+            tweeter: 'https://twitter.com/ArpitBindal4'
+        },
+        {
+            name: 'Sunidhi',
+            image: '/team/sunidhi.png',
+            linkedin: 'https://linkedin.com',
+            tweeter: 'https://twitter.com'
+        },
+        {
+            name: 'Amarnath',
+            image: '/team/amarnath.png',
+            linkedin: 'https://linkedin.com',
+            tweeter: 'https://twitter.com'
         },
     ]
     return (

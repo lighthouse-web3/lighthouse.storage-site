@@ -19,7 +19,7 @@ function AboutPage() {
     return (
         <div className="aboutpage">
             <div className="bg_pattern2"></div>
-            <div className="bg_pattern3"></div>
+            {/* <div className="bg_pattern3"></div> */}
             <div className="bg_pattern4"></div>
             <div className="bg_pattern5"></div>
             <Header />

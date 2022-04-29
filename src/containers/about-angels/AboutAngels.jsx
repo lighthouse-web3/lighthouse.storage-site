@@ -5,16 +5,10 @@ import { Teamcard } from '../../components'
 function AboutAngels() {
     const teamArr = [
         {
-            name: 'Nandit',
-            image: '/nandit.jpg',
+            name: 'Balaji Srinivasan',
+            image: '/angels/balaji.png',
             linkedin: 'https://linkedin.com',
-            tweeter: 'https://twitter.com/nanditmehra'
-        },
-        {
-            name: 'Ravish',
-            image: '/ravish.jpg',
-            linkedin: 'https://linkedin.com',
-            tweeter: 'https://twitter.com/ravish1729'
+            tweeter: 'https://twitter.com/balajis'
         },
     ]
     return (
@@ -28,12 +22,18 @@ function AboutAngels() {
             </div>
 
             <div className="angels">
-                <div className="angels__image">
-                    <img src="/angels/Balaji-Srinivasan.png" alt="angelImage" />
+                {/* <div className="angels__image">
+                    <img src="/angels/balaji.png" alt="angelImage" />
                 </div>
                 <div className="angels__description">
                     <p className="name">Balaji Srinivasan</p>
                     <p className="text">Balaji Srinivasan is an entrepreneur and essayist. He was co-founder of Counsyl, and is the former chief technology officer of Coinbase and former general partner at Andreessen Horowitz.</p>
+                </div> */}
+
+                <div className="team_members">
+                    {teamArr.map((member) =>
+                        <Teamcard {...member} />
+                    )}
                 </div>
             </div>
 

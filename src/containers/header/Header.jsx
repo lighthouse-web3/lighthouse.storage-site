@@ -3,7 +3,6 @@ import "./header.css";
 import { RiMenuFill, RiCloseLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
-
 function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [scrollTop, setScrollTop] = useState();
@@ -25,49 +24,55 @@ function Header() {
         <div className="main__navbar container">
             <div className="navbar__links">
                 <div className="navbar__link__logo">
-                  <img
-                      src="/logo.png"
-                        alt="brandLogo"
-                  />
+                  <img src="/logo.png" alt="brandLogo" />
                   <p className="gradient__text">Lighthouse</p>
               </div>
               <div className="navbar_links_container">
                   <p>
-                        <a onClick={() => { _navigate('/') }}>Home</a>
+                      <a
+                          onClick={() => {
+                              _navigate("/");
+                          }}
+                      >
+                          Home
+                      </a>
                   </p>
                   <p>
-                        <a onClick={() => { _navigate('/about-us') }}>About us</a>
-                    </p>
-                    {/* <p>
-                      <a href="#cli">CLI</a>
+                      <a
+                          onClick={() => {
+                              _navigate("/about-us");
+                          }}
+                      >
+                          About us
+                      </a>
                   </p>
                   <p>
-                      <a href="#features">Features</a>
+                      <a
+                          href="https://airtable.com/shrPFC2TgojuOAYO4"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          Contact us
+                      </a>
                   </p>
                   <p>
-                      <a href="#roadmap">Roadmap</a>
+                      <a
+                          href="https://lighthouse-storage.gitbook.io/lighthouse/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          Documentation
+                      </a>
                   </p>
-                  <p>
-                      <a href="#team">Team</a>
-                  </p> */}
-                    <p>
-                        <a href="https://airtable.com/shrPFC2TgojuOAYO4" target="_blank" rel="noopener noreferrer">Contact us</a>
-                    </p>
-                    <p>
-                        <a href="https://lighthouse-storage.gitbook.io/lighthouse/" target="_blank" rel="noopener noreferrer">Documentation</a>
-                    </p>
               </div>
           </div>
           <div className="navbar__button">
               <button
                   onClick={() =>
-                      window.open(
-                          "https://files.lighthouse.storage/",
-                          "_blank"
-                      )
+                      window.open("https://files.lighthouse.storage/", "_blank")
                   }
               >
-                    File Storage Dapp
+                  File Storage Dapp
               </button>
           </div>
           <div className="navbar__mobile__menu">
@@ -92,30 +97,48 @@ function Header() {
               {toggleMenu && (
                   <div className="mobile_menu_container scale-up-tr">
                       <p>
-                          <a href="#home">Home</a>
+                          <a
+                              onClick={() => {
+                                  _navigate("/");
+                              }}
+                          >
+                              Home
+                          </a>
                       </p>
                       <p>
-                          <a href="#cli">CLI</a>
+                          <a
+                              onClick={() => {
+                                  _navigate("/about-us");
+                              }}
+                          >
+                              About us
+                          </a>
                       </p>
                       <p>
-                          <a href="#features">Features</a>
+                          <a
+                              href="https://airtable.com/shrPFC2TgojuOAYO4"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                              Contact us
+                          </a>
                       </p>
                       <p>
-                          <a href="#roadmap">Roadmap</a>
-                      </p>
-                      <p>
-                          <a href="#team">Team</a>
+                          <a
+                              href="https://lighthouse-storage.gitbook.io/lighthouse/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                              Documentation
+                          </a>
                       </p>
                       <p className="navbar__mobile__button">
                           <button
                               onClick={() =>
-                                  window.open(
-                                      "https://lighthouse-storage.gitbook.io/lighthouse/",
-                                      "_blank"
-                                  )
+                                  window.open("https://files.lighthouse.storage/", "_blank")
                               }
                           >
-                              Get Started
+                              File Storage Dapp
                           </button>
                       </p>
                   </div>
