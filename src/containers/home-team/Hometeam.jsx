@@ -7,32 +7,29 @@ function Hometeam() {
         {
             name: 'Nandit',
             image: '/team/nandit.jpg',
-            linkedin: 'https://linkedin.com',
             tweeter: 'https://twitter.com/nanditmehra'
         },
         {
             name: 'Ravish',
             image: '/team/ravish.png',
-            linkedin: 'https://linkedin.com',
+
             tweeter: 'https://twitter.com/ravish1729'
         },
         {
             name: 'Arpit',
             image: '/team/arpit.png',
-            linkedin: 'https://linkedin.com',
+
             tweeter: 'https://twitter.com/ArpitBindal4'
         },
         {
             name: 'Sunidhi',
             image: '/team/sunidhi.png',
-            linkedin: 'https://linkedin.com',
-            tweeter: 'https://twitter.com'
+            linkedin: 'https://www.linkedin.com/in/sunidhi-chawla-32bb391a5',
+
         },
         {
             name: 'Amarnath',
             image: '/team/amarnath.png',
-            linkedin: 'https://linkedin.com',
-            tweeter: 'https://twitter.com'
         },
     ]
     return (
