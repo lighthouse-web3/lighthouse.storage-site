@@ -25,6 +25,7 @@ function Teamcard({ name, linkedin, tweeter, image }) {
                     }
 
 
+
                 </div>
 
             </div>
