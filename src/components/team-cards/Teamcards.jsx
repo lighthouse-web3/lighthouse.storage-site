@@ -1,6 +1,6 @@
 import React from 'react'
 import './teamcard.css'
-// import { IoLogoLinkedin } from 'react-icons/io'
+import { IoLogoLinkedin } from 'react-icons/io'
 import { AiFillTwitterSquare } from 'react-icons/ai'
 
 function Teamcard({ name, linkedin, tweeter, image }) {
@@ -14,10 +14,18 @@ function Teamcard({ name, linkedin, tweeter, image }) {
                 </p>
 
                 <div className="icons">
-                    {/* <IoLogoLinkedin className='social_icon' onClick={() => window.open(linkedin, "_blank")} /> */}
-                    <AiFillTwitterSquare
+                    {
+                        linkedin && <IoLogoLinkedin className='social_icon' onClick={() => window.open(linkedin, "_blank")} />
+                    }
+
+                    {
+                        tweeter && <AiFillTwitterSquare
                         className='social_icon'
                         onClick={() => window.open(tweeter, "_blank")} />
+                    }
+
+
+
                 </div>
 
             </div>

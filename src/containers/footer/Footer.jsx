@@ -2,25 +2,22 @@ import React from 'react'
 import './footer.css';
 import { MdLocationOn, MdMailOutline } from 'react-icons/md'
 
-import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaTwitterSquare, FaLinkedin, FaDiscord } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom';
+
 
 function Footer() {
+    const _navigate = useNavigate();
     return (
         <div className='footer-container section__padding'>
             <div className="site-details">
                 <div className="site_map">
                     <p className='f_title'>Sitemap</p>
                     <p>
-                        <a href="#home">Home</a>
+                        <a onClick={() => { _navigate('/') }} >Home</a>
                     </p>
                     <p>
-                        <a href="#cli">CLI</a>
-                    </p>
-                    <p>
-                        <a href="#features">Features</a>
-                    </p>
-                    <p>
-                        <a href="#team">Team</a>
+                        <a onClick={() => { _navigate('/about-us') }} >About us</a>
                     </p>
                 </div>
                 <div className="policies">
@@ -43,6 +40,8 @@ function Footer() {
                 <div className="set">
                     <FaTwitterSquare className='icon social' onClick={() => window.open('https://twitter.com/LighthouseWeb3', "_blank")} />
                     <FaGithubSquare className='icon social' onClick={() => window.open('https://github.com/lighthouseweb3', "_blank")} />
+                    <FaLinkedin className='icon social' onClick={() => window.open('https://www.linkedin.com/company/lighthouse-web3', "_blank")} />
+                    <FaDiscord className='icon social' onClick={() => window.open('https://discord.com/invite/c4a4CGCdJG', "_blank")} />
                 </div>
             </div>            
         </div>

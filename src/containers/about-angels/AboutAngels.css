@@ -1,0 +1,83 @@
+.angels_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.angels_container>.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.title>.description__text {
+    color: white;
+}
+
+.angels {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0px;
+}
+
+.angels>.angels__image {
+    width: 50%;
+}
+
+.angels>.angels__image>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.angels>.angels__description {
+    width: 50%;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: var(--font-primary);
+}
+
+.angels>.angels__description>.name {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.angels>.angels__description>.text {
+    font-size: 1rem;
+}
+
+.team_members {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .title {
+        width: 90%;
+    }
+
+    .title>.title__text {
+        font-size: 2rem;
+    }
+
+    .title>.description__text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+}
