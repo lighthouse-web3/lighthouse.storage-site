@@ -3,27 +3,23 @@ import emailjs from "@emailjs/browser";
 
 export const sendEmail = async (email) => {
   let message = {
-    to_emails: "support@lighthouse.storage",
-    message: email,
+    to_email: email,
   };
   emailjs
     .send(
-      "service_wtwdhbv",
-      "template_osbkn86",
+      "service_dyqwvtg",
+      "template_np0xnzi",
       message,
-      "user_sWuohBQz7vY1wvfFSbCDF"
+      "user_Aknum3vI0j25vcn8JC5ZO"
     )
     .then(
       function (response) {
-        // console.log('SUCCESS!', response.status, response.text);
         if (response.status === 200) {
           notify("Email Submitted", "success");
-          return true;
         }
       },
       function (error) {
-        // console.log('FAILED...', error);
-        return false;
+        notify(`Error: ${error}`, "error");
       }
     );
 };

@@ -1,0 +1,22 @@
+.angel_card_container {
+    width: 40%;
+    padding: 1rem;
+    border: 1px solid #DDDD;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.angel_card_container>img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.member_info>.member_designation {
+    color: white;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    padding: 10px 0px;
+}

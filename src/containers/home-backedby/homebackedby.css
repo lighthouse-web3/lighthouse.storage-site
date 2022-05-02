@@ -40,7 +40,7 @@ min-height:100px;
         height: auto;
         margin: 1rem;
         object-fit: contain;
-
+      min-height: 100px;
     }
   
   }
