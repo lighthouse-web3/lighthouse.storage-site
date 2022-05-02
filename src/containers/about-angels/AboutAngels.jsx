@@ -1,13 +1,14 @@
 import React from 'react'
 import './AboutAngels.css'
-import { Teamcard } from '../../components'
+import Angelcard from '../../components/angel-card/AngelCard'
 
 function AboutAngels() {
     const teamArr = [
         {
             name: 'Balaji Srinivasan',
             image: '/angels/balaji.png',
-            linkedin: 'https://linkedin.com',
+            designation: 'Ex-CTO Coinbase',
+            linkedin: 'https://www.linkedin.com/in/balajissrinivasan',
             tweeter: 'https://twitter.com/balajis'
         },
     ]
@@ -22,17 +23,10 @@ function AboutAngels() {
             </div>
 
             <div className="angels">
-                {/* <div className="angels__image">
-                    <img src="/angels/balaji.png" alt="angelImage" />
-                </div>
-                <div className="angels__description">
-                    <p className="name">Balaji Srinivasan</p>
-                    <p className="text">Balaji Srinivasan is an entrepreneur and essayist. He was co-founder of Counsyl, and is the former chief technology officer of Coinbase and former general partner at Andreessen Horowitz.</p>
-                </div> */}
 
                 <div className="team_members">
                     {teamArr.map((member) =>
-                        <Teamcard {...member} />
+                        <Angelcard {...member} />
                     )}
                 </div>
             </div>

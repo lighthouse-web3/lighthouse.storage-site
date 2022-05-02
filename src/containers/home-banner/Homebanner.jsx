@@ -14,15 +14,11 @@ function Homebanner() {
         if (
             validateEmail(userEmail)
         ) {
-            console.log('right')
             sendEmail(userEmail).then((res) => {
                 mailInput.current.value = '';
             })
-
         } else {
-            console.log('wrong')
             notify('Please Enter a valid Email', 'error')
-
         }
 
     }
