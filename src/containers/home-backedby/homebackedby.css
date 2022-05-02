@@ -35,11 +35,12 @@
 
     }
     .logo_container > .org_logo{
+min-height:100px;
         width: 70%;
         height: auto;
         margin: 1rem;
         object-fit: contain;
-        min-height: 100px;
+      min-height: 100px;
     }
   
   }
