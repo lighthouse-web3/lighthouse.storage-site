@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css';
 import { MdLocationOn, MdMailOutline } from 'react-icons/md'
 
-import { FaGithubSquare, FaTwitterSquare, FaLinkedin, FaDiscord } from 'react-icons/fa'
+import { FaGithubSquare, FaTwitterSquare, FaLinkedin, FaDiscord, FaTelegram } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -42,6 +42,7 @@ function Footer() {
                     <FaGithubSquare className='icon social' onClick={() => window.open('https://github.com/lighthouseweb3', "_blank")} />
                     <FaLinkedin className='icon social' onClick={() => window.open('https://www.linkedin.com/company/lighthouse-web3', "_blank")} />
                     <FaDiscord className='icon social' onClick={() => window.open('https://discord.com/invite/c4a4CGCdJG', "_blank")} />
+                    <FaTelegram className='icon social' onClick={() => window.open('https://t.me/lighthouseStorage', "_blank")} />
                 </div>
             </div>            
         </div>
