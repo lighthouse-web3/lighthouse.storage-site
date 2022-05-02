@@ -24,9 +24,9 @@ function AboutPage() {
             <div className="bg_pattern5"></div>
             <Header />
 
-            <AboutAngels />
             <Hometeam />
             <Homebackedby />
+            <AboutAngels />
             <Footer />
             <DiscordFloat />
         </div>
