@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import { RiMenuFill, RiCloseLine } from "react-icons/ri";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function Header() {
@@ -72,7 +73,8 @@ function Header() {
                       window.open("https://files.lighthouse.storage/", "_blank")
                   }
               >
-                  File Storage Dapp
+                    Store Files Now &nbsp;
+                    <MdOutlineArrowForwardIos />
               </button>
           </div>
           <div className="navbar__mobile__menu">
