@@ -28,8 +28,12 @@ function Hometeam() {
 
         },
         {
-            name: 'Amarnath',
-            image: '/team/amarnath.png',
+            name: 'Ayobami Oki',
+            image: '/team/Ayobami_oki.png',
+        },
+        {
+            name: 'Tejiri Odiase',
+            image: '/team/tejiri_odiase.png',
         },
     ]
     return (

@@ -27,7 +27,7 @@ function Homebanner() {
             <div className="banner-overlay"></div>
             <div className="homebanner">
                 <div className="title">
-                    <p className='gradient__text title__text'>Permanent Storage Redefined</p>
+                    <p className='gradient__text title__text'>A New Way To <br /> Store Files Permanently</p>
 
                     <p className='description__text'>
                         Lighthouse allows users to store their files on decentralized network for lifetime at a fixed price
@@ -45,7 +45,7 @@ function Homebanner() {
             <div className="banner_Image">
                 <img src="/world.png" alt="BannerImage" />
             </div>
-
+            {/* sss */}
         </div>
     )
 }
