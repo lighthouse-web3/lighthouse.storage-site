@@ -39,7 +39,7 @@ function Footer() {
                 </div>
                 <div className="set">
                     <FaTwitterSquare className='icon social' onClick={() => window.open('https://twitter.com/LighthouseWeb3', "_blank")} />
-                    <FaGithubSquare className='icon social' onClick={() => window.open('https://github.com/lighthouseweb3', "_blank")} />
+                    <FaGithubSquare className='icon social' onClick={() => window.open('https://github.com/lighthouse-web3', "_blank")} />
                     <FaLinkedin className='icon social' onClick={() => window.open('https://www.linkedin.com/company/lighthouse-web3', "_blank")} />
                     <FaDiscord className='icon social' onClick={() => window.open('https://discord.com/invite/c4a4CGCdJG', "_blank")} />
                     <FaTelegram className='icon social' onClick={() => window.open('https://t.me/lighthouseStorage', "_blank")} />

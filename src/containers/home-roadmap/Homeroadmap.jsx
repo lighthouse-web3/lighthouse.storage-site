@@ -20,7 +20,7 @@ function Homeroadmap() {
             quater: 'Q1-2022',
             milestone: '2',
             points: ['Testing',
-                'Beta Launch',
+                'Alpha Launch',
                 'Tokenomics and white paper',
                 'Onboard node runners'
             ],
@@ -29,11 +29,11 @@ function Homeroadmap() {
         {
             quater: 'Q2-2022',
             milestone: '3',
-            points: ['Token launch ',
+            points: [
                 'Bootstrap endowment pool',
                 'Security audit',
-                'Main smart contracts on polygon chain',
-                'Python and golang dev kit for users'
+                'Protocol Deploy Mainet',
+                'Cosmos SDK for nodes'
             ],
             position: 'lower'
         },
@@ -41,10 +41,10 @@ function Homeroadmap() {
             quater: 'Q3-2022',
             milestone: '4',
             points: ['Ecosystem Development',
-                'Promoting grants and hackathons to build on Lighthouse',
+                'Infrastructure Decentralize',
                 'compatibility to FVM',
                 'Onboard useful public data',
-                'Prototype of multi chain compatibility like solana, ICP'
+
             ],
             position: 'upper'
         },
@@ -54,7 +54,7 @@ function Homeroadmap() {
             points: [
                 ' NFT and storage DAO',
                 'Prototype of privacy focussed zkp solutions to store files',
-                'Filecoin Miners directly claim deals from Lighthouse smart contract'
+                'Token Launch (Tentative)'
 
             ],
             position: 'lower'
