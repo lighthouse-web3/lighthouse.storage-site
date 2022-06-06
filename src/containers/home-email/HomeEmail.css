@@ -1,0 +1,53 @@
+.HomeEmail_container>.title {
+    width: 100%;
+}
+
+.title>.description__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+}
+
+.title>.description_email {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.title>.description_email>input[type='text'] {
+    text-align: center;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    min-width: 30%;
+    font-size: 1rem;
+}
+
+.title>.description_email>button {
+    padding: 7px 1.3em;
+    height: fit-content;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    background: var(--gradient);
+    box-shadow: 0px 4px 31px rgb(0 0 0 / 15%);
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .title>.description_email {
+        flex-direction: column;
+    }
+
+
+}

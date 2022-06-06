@@ -13,6 +13,7 @@ import {
 } from "../../containers";
 
 import { DiscordFloat } from "../../components";
+import HomeEmail from "../../containers/home-email/HomeEmail";
 
 function HomePage() {
     return (
@@ -27,9 +28,7 @@ function HomePage() {
             <Homekeyfeatures />
             <Homekeydiffrence />
             <Homeroadmap />
-            {/* <Homeroadmap />
-            <Hometeam />
-            <Homebackedby /> */}
+            <HomeEmail />
             <Footer />
             <DiscordFloat />
         </div>
