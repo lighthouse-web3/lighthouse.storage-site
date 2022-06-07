@@ -7,6 +7,7 @@
     font-weight: 300;
     line-height: 1.5;
     color: white;
+    padding: 1.5rem 0rem;
 }
 
 .title>.description_email {
@@ -28,7 +29,7 @@
 
 .title>.description_email>button {
     padding: 7px 1.3em;
-    height: fit-content;
+    height: 2rem;
     color: #ffffff;
     font-family: var(--font-primary);
     font-style: normal;

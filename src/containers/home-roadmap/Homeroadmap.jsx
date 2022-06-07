@@ -21,8 +21,7 @@ function Homeroadmap() {
             milestone: '2',
             points: ['Testing',
                 'Alpha Launch',
-                'Tokenomics and white paper',
-                'Onboard node runners'
+                'Tokenomics and white paper'
             ],
             position: 'upper'
         },
@@ -32,7 +31,7 @@ function Homeroadmap() {
             points: [
                 'Bootstrap endowment pool',
                 'Security audit',
-                'Protocol Deploy Mainet',
+                'Protocol Deploy Mainnet',
                 'Cosmos SDK for nodes'
             ],
             position: 'lower'
