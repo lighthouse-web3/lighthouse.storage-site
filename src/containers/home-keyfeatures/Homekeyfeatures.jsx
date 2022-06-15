@@ -17,7 +17,7 @@ function Homekeyfeatures() {
         {
             image: '/feature/feature (2).png',
             title: 'Cheaper than alternates',
-            content: ' Being built on top of Filecoin, makes the Lighthouse storage much cheaper than existing alternates in the market.  '
+            content: 'The protocol also generate yield on its endowment pool reserves, connecting to other DeFi protocols'
         },
         {
             image: '/feature/feature (1).png',

@@ -1,0 +1,32 @@
+.PageNotFound {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.PageNotFound>.logoContainer {
+    width: 40%;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.PageNotFound>.title>.title__text {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.PageNotFound>.title>.typeAnimation {
+    font-size: 2rem;
+}
+
+.PageNotFound>.goBack {
+    margin-top: 2rem;
+    font-family: 'Montserrat';
+    text-decoration: underline;
+}
