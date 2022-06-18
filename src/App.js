@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/about/about";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import NFT from "./pages/NFT/NFT";
+import FAQPage from "./pages/FAQPage/FAQPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/about-us" element={<AboutPage />}></Route>
       <Route path="*" element={<PageNotFound />}></Route>
       <Route path="/nft" element={<NFT />}></Route>
+      <Route path="/faq" element={<FAQPage />}></Route>
     </Routes>
   );
 }
