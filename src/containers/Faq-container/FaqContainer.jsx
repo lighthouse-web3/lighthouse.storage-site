@@ -33,7 +33,7 @@ const questions = [
 
 function FAQContainer() {
     const [searchWord, setSearchWord] = useState('');
-    const [currentQuestions, setCurrentQuestions] = useState(questions);
+    // const [currentQuestions, setCurrentQuestions] = useState(questions);
     const [filteredQuestions, setFilteredQuestions] = useState(questions);
 
     useEffect(() => {
@@ -70,7 +70,7 @@ function FAQContainer() {
                 <div className="faq__contentContainer">
                     <div className="questionsContainer">
                         {
-                            currentQuestions.map((question, key) => <QuestionBox question={question} key={key} />)
+                            filteredQuestions.map((question, key) => <QuestionBox question={question} key={key} />)
                         }
 
                     </div>
@@ -87,7 +87,7 @@ function FAQContainer() {
 
             </div>
 
-            <Pagination data={filteredQuestions} setCurrentData={setCurrentQuestions} itemsPerPage={3} />
+            {/* <Pagination data={filteredQuestions} setCurrentData={setCurrentQuestions} itemsPerPage={3} /> */}
 
         </div>
     )
