@@ -24,7 +24,7 @@ export const data = {
       commands: [
         {
           section: "install",
-          command: "npm i -g lighthouse-web3",
+          command: "npm install -g @lighthouse-web3/sdk",
           image: "/1-cli.png",
         },
         {
