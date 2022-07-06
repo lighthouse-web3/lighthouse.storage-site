@@ -32,8 +32,8 @@ function Roadmapquater({ quater, milestone, points, position }) {
             <div className="text-box">
                 <div className="quater-title gradient__text">Milestone-{milestone}</div>
                 <table>
-                    {points.map((point) => (
-                        <tr className="points">
+                    {points.map((point, index) => (
+                        <tr className="points" key={index}>
                             <td className="bullet">
                                 {icons[Math.floor(Math.random() * icons.length)]}
                             </td>

@@ -1,15 +1,12 @@
 import React from 'react'
 import './homekeydiffrence.css'
 import { BsFillCircleFill } from 'react-icons/bs'
+import { data } from '../../utils/Data/config';
+const contentData = data['Home']['keyDiffrence'];
 
 function Homekeydiffrence() {
 
-    const points = [
-        'Pay once and store forever cost model is a pretty new storage cost model which is different from existing protocols.',
-        'Our mechanism involves staking, accruing fees and interest on the storage cost paid by the user which overall leads to a lower fee than the current alternative like arweave.',
-        'Smart contracts run on popular chains like polygon, ethereum, etc. hence direct integration with existing dapps of these ecosystems.',
-        'IPFS and Filecoin are the popular blockchain storage protocols and hence Lighthouse will be very compatible with existing stack for projects to migrate to.'
-    ]
+    const points = contentData;
     return (
         <div className='keyDifference_container '>
             <div className="title section__padding">
@@ -25,8 +22,8 @@ function Homekeydiffrence() {
                 <div className="overlay2"></div>
                 <table className='points_table'>
                     {
-                        points.map(point =>
-                            <tr>
+                        points.map((point, index) =>
+                            <tr key={index}>
                                 <td className='line'>
                                     <div className="pointer">
                                         <BsFillCircleFill />

@@ -1,64 +1,14 @@
 import React from 'react'
 import RoadmapQuaterMobile from '../../components/roadmap-quater-mobile/RoadmapQuaterMobile';
 import Roadmapquater from '../../components/roadmap-quater/Roadmapquater'
+import { data } from '../../utils/Data/config';
 import './homeroadmap.css'
+const contentData = data['Home']['roadmapData'];
 
 function Homeroadmap() {
     const { innerWidth: width } = window;
 
-    const roadmapData = [
-        {
-            quater: 'Q4-2021',
-            milestone: '1',
-            points: ['Launch Alpha - cli and npm package',
-                'Get early users',
-                ' Build community - twitter, telegram and discord'
-            ],
-            position: 'lower'
-        },
-        {
-            quater: 'Q1-2022',
-            milestone: '2',
-            points: ['Testing',
-                'Alpha Launch',
-                'Tokenomics and white paper'
-            ],
-            position: 'upper'
-        },
-        {
-            quater: 'Q2-2022',
-            milestone: '3',
-            points: [
-                'Bootstrap endowment pool',
-                'Security audit',
-                'Protocol Deploy Mainnet',
-                'Cosmos SDK for nodes'
-            ],
-            position: 'lower'
-        },
-        {
-            quater: 'Q3-2022',
-            milestone: '4',
-            points: ['Ecosystem Development',
-                'Infrastructure Decentralize',
-                'compatibility to FVM',
-                'Onboard useful public data',
-
-            ],
-            position: 'upper'
-        },
-        {
-            quater: 'Q4-2022',
-            milestone: '5',
-            points: [
-                ' NFT and storage DAO',
-                'Prototype of privacy focussed zkp solutions to store files',
-                'Token Launch (Tentative)'
-
-            ],
-            position: 'lower'
-        }
-    ];
+    const roadmapData = contentData;
     return (
         <div className=' homeroadmap_container' id="roadmap">
             <div className="section__padding_x title">
