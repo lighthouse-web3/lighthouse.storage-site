@@ -4,6 +4,10 @@ import { MdLocationOn, MdMailOutline } from 'react-icons/md'
 
 import { FaGithubSquare, FaTwitterSquare, FaLinkedin, FaDiscord, FaTelegram } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom';
+import { data } from '../../utils/Data/config';
+const globalData = data['Global']
+const socialData = data['SocialLinks']
+
 
 
 function Footer() {
@@ -29,20 +33,20 @@ function Footer() {
             <div className="contact-details">
                 <div className="set">
                     <MdLocationOn className='icon' /> <p>
-                        Lighthouse - Singapore
+                        {globalData.address}
                     </p>
                 </div>
                 <div className="set">
                     <MdMailOutline className='icon' /> <p>
-                        nandit@Lighthouse.storage
+                        {globalData.email}
                     </p>
                 </div>
                 <div className="set">
-                    <FaTwitterSquare className='icon social' onClick={() => window.open('https://twitter.com/LighthouseWeb3', "_blank")} />
-                    <FaGithubSquare className='icon social' onClick={() => window.open('https://github.com/lighthouse-web3', "_blank")} />
-                    <FaLinkedin className='icon social' onClick={() => window.open('https://www.linkedin.com/company/lighthouse-web3', "_blank")} />
-                    <FaDiscord className='icon social' onClick={() => window.open('https://discord.com/invite/c4a4CGCdJG', "_blank")} />
-                    <FaTelegram className='icon social' onClick={() => window.open('https://t.me/lighthouseStorage', "_blank")} />
+                    <FaTwitterSquare className='icon social' onClick={() => window.open(socialData.tweeter, "_blank")} />
+                    <FaGithubSquare className='icon social' onClick={() => window.open(socialData.github, "_blank")} />
+                    <FaLinkedin className='icon social' onClick={() => window.open(socialData.linkedin, "_blank")} />
+                    <FaDiscord className='icon social' onClick={() => window.open(socialData.discord, "_blank")} />
+                    <FaTelegram className='icon social' onClick={() => window.open(socialData.telegram, "_blank")} />
                 </div>
             </div>            
         </div>

@@ -1,4 +1,15 @@
 export const data = {
+  Global: {
+    address: "Lighthouse - Singapore",
+    email: "nandit@Lighthouse.storage",
+  },
+  SocialLinks: {
+    tweeter: "https://twitter.com/LighthouseWeb3",
+    linkedin: "https://www.linkedin.com/company/lighthouse-web3",
+    github: "https://github.com/lighthouse-web3",
+    discord: "https://discord.com/invite/c4a4CGCdJG",
+    telegram: "https://t.me/lighthouseStorage",
+  },
   Home: {
     banner: {
       title: "A New Way To <br /> Store Files Permanently",
@@ -115,5 +126,80 @@ export const data = {
         position: "lower",
       },
     ],
+    email: {
+      title: "Join our list",
+      description:
+        "Subscribe to get the latest news, updates and early access to Lighthouse Beta",
+      btnText: "Contact Us",
+    },
+  },
+  About: {
+    team: {
+      title: "Our Team",
+      description:
+        "Company is not defined by the things they do but by the team it is done by",
+      members: [
+        {
+          name: "Nandit",
+          image: "/team/nandit.jpg",
+          tweeter: "https://twitter.com/nanditmehra",
+        },
+        {
+          name: "Ravish",
+          image: "/team/ravish.png",
+
+          tweeter: "https://twitter.com/ravish1729",
+        },
+        {
+          name: "Arpit",
+          image: "/team/arpit.png",
+
+          tweeter: "https://twitter.com/ArpitBindal4",
+        },
+        {
+          name: "Sunidhi",
+          image: "/team/sunidhi.png",
+          linkedin: "https://www.linkedin.com/in/sunidhi-chawla-32bb391a5",
+        },
+        {
+          name: "Ayobami Oki",
+          image: "/team/Ayobami_oki.png",
+        },
+        {
+          name: "Tejiri Odiase",
+          image: "/team/tejiri_odiase.png",
+        },
+      ],
+    },
+    backedBy: {
+      title: "Backed By",
+      description:
+        "We are backed by some of the most prestegious organisations",
+      logos: [
+        "/BackedBy/protocol_labs.png",
+        "/BackedBy/long-hash-ventures.png",
+        "/BackedBy/Big_Brain.png",
+        "/BackedBy/Fenbushi_Capital.png",
+        "/BackedBy/Formless.png",
+        "/BackedBy/mask_network.svg",
+        "/BackedBy/NGC.png",
+        "/BackedBy/2Link.jpg",
+        "/BackedBy/hashcib.png",
+      ],
+    },
+    angel: {
+      title: "Our Angels",
+      description:
+        " Our mentors and investors believes in our vision and empower us to acheive it.",
+      angels: [
+        {
+          name: "Balaji Srinivasan",
+          image: "/angels/balaji.png",
+          designation: "Ex-CTO Coinbase",
+          linkedin: "https://www.linkedin.com/in/balajissrinivasan",
+          tweeter: "https://twitter.com/balajis",
+        },
+      ],
+    },
   },
 };

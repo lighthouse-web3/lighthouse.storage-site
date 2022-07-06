@@ -1,24 +1,18 @@
 import React from 'react'
 import './AboutAngels.css'
 import Angelcard from '../../components/angel-card/AngelCard'
+import { data } from '../../utils/Data/config';
+
+const contentData = data['About']['angel'];
 
 function AboutAngels() {
-    const teamArr = [
-        {
-            name: 'Balaji Srinivasan',
-            image: '/angels/balaji.png',
-            designation: 'Ex-CTO Coinbase',
-            linkedin: 'https://www.linkedin.com/in/balajissrinivasan',
-            tweeter: 'https://twitter.com/balajis'
-        },
-    ]
+    const teamArr = contentData.angels;
     return (
         <div className='section__padding angels_container' id="team">
             <div className="title">
-                <p className='gradient__text title__text'>Our Angels</p>
+                <p className='gradient__text title__text'>{contentData.title}</p>
 
-                <p className='description__text'>
-                    Our mentors and investors believes in our vision and empower us to acheive it.
+                <p className='description__text' dangerouslySetInnerHTML={{ __html: contentData.description }}>
                 </p>
             </div>
 
