@@ -1,0 +1,32 @@
+.Blogs{
+    position: relative;
+    .bg_pattern2{
+        top: 140vh;
+    }
+    &__title{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-primary);
+        font-size: 3.5rem;
+    } 
+    
+    &__container{
+        display: flex;
+        flex-direction: row;
+        .recent{
+            width: 30%;
+            padding: 10px;
+        }
+        .list{
+            flex: 1;
+            padding: 10px;
+        }        
+    }
+}
+
+
+
+
+
