@@ -26,7 +26,21 @@
     }
 }
 
-
+  
+@media screen and (max-width: 800px) {
+    .section__padding{
+        padding: 1rem;
+    }
+    .Blogs {
+        &__container{
+            flex-direction: column-reverse;
+            .recent{
+                width: 100%;
+            }
+        }
+    }  
+  }
+  
 
 
 

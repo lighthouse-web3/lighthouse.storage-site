@@ -63,4 +63,19 @@
 
 
 
-
+@media screen and (max-width: 800px) {
+    .section__padding{
+        padding: 1rem;
+    }
+    .viewBlog__title{
+        font-size: 2.5rem;
+    }
+    .viewBlog {
+        &__container{
+            flex-direction: column-reverse;
+            .recent{
+                width: 100%;
+            }
+        }
+    }  
+  }
