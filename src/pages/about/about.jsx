@@ -2,18 +2,15 @@ import React from 'react'
 import {
     Header,
     Footer,
-    Homebanner,
-    Homepackage,
     Hometeam,
     Homebackedby,
-    Homekeydiffrence,
-    Homekeyfeatures,
-    Homeroadmap,
 } from "../../containers";
 import './about.css'
 
 import { DiscordFloat } from "../../components";
 import AboutAngels from '../../containers/about-angels/AboutAngels';
+import Testimonials from '../../containers/Testimonials/Testimonials';
+import Pricing from '../../containers/Pricing-Section/Pricing';
 
 function AboutPage() {
     return (
@@ -27,6 +24,8 @@ function AboutPage() {
             <Hometeam />
             <Homebackedby />
             <AboutAngels />
+            <Testimonials />
+            <Pricing />
             <Footer />
             <DiscordFloat />
         </div>

@@ -11,7 +11,6 @@ function AboutAngels() {
         <div className='section__padding angels_container' id="team">
             <div className="title">
                 <p className='gradient__text title__text'>{contentData.title}</p>
-
                 <p className='description__text' dangerouslySetInnerHTML={{ __html: contentData.description }}>
                 </p>
             </div>

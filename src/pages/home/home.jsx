@@ -12,7 +12,7 @@ import {
     Homeroadmap,
 } from "../../containers";
 
-import { DiscordFloat } from "../../components";
+import { CookiesFloat, DiscordFloat } from "../../components";
 import HomeEmail from "../../containers/home-email/HomeEmail";
 
 function HomePage() {
@@ -31,6 +31,7 @@ function HomePage() {
             <HomeEmail />
             <Footer />
             <DiscordFloat />
+            <CookiesFloat />
         </div>
     );
 }
