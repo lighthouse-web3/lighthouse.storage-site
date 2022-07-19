@@ -1,10 +1,8 @@
 import React from 'react'
 import './homekeydiffrence.css'
 import { BsFillCircleFill } from 'react-icons/bs'
-import { data } from '../../utils/Data/config';
-const contentData = data['Home']['keyDiffrence'];
 
-function Homekeydiffrence() {
+function Homekeydiffrence({ contentData }) {
 
     const points = contentData;
     return (

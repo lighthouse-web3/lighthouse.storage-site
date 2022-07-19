@@ -1,10 +1,9 @@
 import React from 'react'
 import './hometeam.css'
 import { Teamcard } from '../../components'
-import { data } from '../../utils/Data/config';
-const contentData = data['About']['team'];
 
-function Hometeam() {
+
+function Hometeam({ contentData }) {
     const teamArr = contentData.members;
     return (
         <div className='section__padding hometeam_container' id="team">
@@ -16,8 +15,8 @@ function Hometeam() {
             </div>
 
             <div className="team_members">
-                {teamArr.map((member) =>
-                    <Teamcard {...member} />
+                {teamArr.map((member, index) =>
+                    <Teamcard key={index} {...member} />
                 )}
             </div>
 

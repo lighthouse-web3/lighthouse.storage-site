@@ -5,6 +5,10 @@
     flex-direction: column;
     font-family: var(--font-primary);
     border-radius: 15px;
+
+    &:hover{
+        transform: scale(1.01);
+    }
     
     img{
         width: 100%;

@@ -1,5 +1,6 @@
 import React from 'react'
-import { BlogCard } from '../../components';
+import { useState } from 'react';
+import { BlogCard, Pagination } from '../../components';
 import './BlogList.scss'
 
 const Blogs = [
@@ -30,12 +31,24 @@ const Blogs = [
 ]
 
 function BlogList() {
+    const [currentBlogs, setCurrentBlog] = useState([]);
+    const [allBlogs, setAllBlogs] = useState(Blogs);
+
     return (
+        <>
+            {
+                console.log(currentBlogs, 'currentBlog')
+            }
         <div className="BlogList">
             {
-                Blogs.map((blog) => <BlogCard blog={blog} />)
+                    currentBlogs.map((blog, index) => <BlogCard key={index} blog={blog} />)
             }
         </div>
+            <Pagination setCurrentData={setCurrentBlog} itemsPerPage={6} orignalData={allBlogs} />
+
+        </>
+
+
     )
 }
 

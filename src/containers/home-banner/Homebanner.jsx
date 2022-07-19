@@ -1,9 +1,8 @@
-import React from 'react'
-import { data } from '../../utils/Data/config'
-import './homebanner.css'
-const contentData = data['Home']['banner'];
+import React from 'react';
+import { mediaUrl } from '../../utils/Data/config';
+import './homebanner.css';
 
-function Homebanner() {
+function Homebanner({ contentData }) {
     return (
         <div className='section__padding banner_container' id="home">
             <div className="banner-overlay"></div>
@@ -18,7 +17,7 @@ function Homebanner() {
             </div>
 
             <div className="banner_Image">
-                <img src={contentData['image']} alt="BannerImage" />
+                <img src={mediaUrl + contentData['image']} alt="BannerImage" />
             </div>
 
         </div>

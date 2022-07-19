@@ -1,10 +1,9 @@
 import { React, useState } from 'react'
 import TypeAnimation from 'react-type-animation';
-import { data } from '../../utils/Data/config';
-
+import { mediaUrl } from '../../utils/Data/config';
 import './homepackage.css'
-const contentData = data['Home']['package'];
-function Homepackage() {
+
+function Homepackage({ contentData }) {
     const [currentSelection, setSelection] = useState('install');
     return (
         <div className='section__padding homepackage_container' id="cli">
@@ -52,7 +51,7 @@ function Homepackage() {
 
                 {
                     contentData?.commands.map((item, index) => currentSelection === item.section && (
-                        <img src={item.image} alt="commandlineImage" />
+                        <img src={mediaUrl + item.image} key={index} alt="commandlineImage" />
                     ))
                 }
             </div>

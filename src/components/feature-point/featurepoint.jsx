@@ -1,4 +1,5 @@
 import React from 'react'
+import { mediaUrl } from '../../utils/Data/config';
 import './featurepoint.css'
 
 function featurepoint({ image, title, content, index }) {
@@ -7,7 +8,7 @@ function featurepoint({ image, title, content, index }) {
     return (
         <div className={`featurepoint_container  ${(index % 2 === 0) ? 'container_row' : 'container_row-reverse'}`} >
             <div className="image_container">
-                <img src={image} alt="feature_image" />
+                <img src={mediaUrl + image} alt="feature_image" />
             </div>
             <div className="text_container"  >
                 <div className="title" style={

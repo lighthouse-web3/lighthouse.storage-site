@@ -7,6 +7,18 @@
         align-items: center;
         font-family: var(--font-primary);
         font-size: 3.5rem;
+        position: relative;
+
+        .icon{
+            position: absolute;
+            left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+            padding-left: 6rem;
+        }
     } 
     
     &__container{
@@ -36,11 +48,17 @@
                 .title{
                     padding: 5px;
                     width: 100%;
-                   
                     font-size: 2rem;
                     font-weight: 600;
                     text-align: left;
-                    margin: 1rem 0rem;
+                    margin: 1rem 0rem 0rem 0rem;
+                }
+
+                .infobar{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px;
                     .date {
                         font-size: 0.9rem;
                         display: flex;
@@ -49,10 +67,30 @@
                         color: rgba(0, 0, 0, 0.734);
                         padding: 5px 0px;
                       }
+
+                      .share{
+                        display: flex;
+                        span{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0px 5px;
+                            cursor: pointer;
+                        }
+                      }
                 }
 
                 .content{
                     padding: 5px;
+                }
+
+                .author{
+                    padding: 5px;
+                    border-top: 1px solid grey;
+                    margin: 10px 0px;
+                    color: rgba(0, 0, 0, 0.734);
+                    display: flex;
+                    align-items: center;
                 }
                
             }
@@ -69,6 +107,11 @@
     }
     .viewBlog__title{
         font-size: 2.5rem;
+        .icon{
+            left: 10px;
+            font-size: 2rem;
+            padding-left: 0rem;
+        }
     }
     .viewBlog {
         &__container{

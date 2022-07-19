@@ -9,3 +9,4 @@ export { default as RecentBlogCard } from "./RecentBlogCard/RecentBlogCard";
 export { default as BlogCard } from "./BlogCard/BlogCard";
 export { default as PriceCard } from "./PriceCard/PriceCard";
 export { default as CookiesFloat } from "./cookies-float/CookiesFloat";
+export { default as Pagination } from "./Pagination/Pagination";
