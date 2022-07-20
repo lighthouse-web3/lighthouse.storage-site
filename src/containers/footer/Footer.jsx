@@ -24,7 +24,10 @@ function Footer() {
                         <a onClick={() => { _navigate('/about-us') }} >About us</a>
                     </p>
                     <p>
-                        <a onClick={() => { _navigate('/career') }} >Careers</a>
+                        <a onClick={() => { _navigate('/faq') }} >FAQ's</a>
+                    </p>
+                    <p>
+                      <a onClick={() => { _navigate('/career') }} >Careers</a>
                     </p>
                 </div>
                 <div className="policies">
