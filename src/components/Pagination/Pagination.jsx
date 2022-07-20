@@ -5,6 +5,7 @@ import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
 
 
+
 function Pagination({ data, setCurrentData, itemsPerPage }) {
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -19,6 +20,7 @@ function Pagination({ data, setCurrentData, itemsPerPage }) {
             setPageCount(Math.ceil(data.length / itemsPerPage));
         }
     }, [itemOffset, itemsPerPage, data]);
+
     return (
         <ReactPaginate
             className="pagination"

@@ -9,8 +9,8 @@ function RoadmapQuaterMobile(data) {
         <div className='roadmap_mobile_container '>
             <table className='points_table'>
                 {
-                    points.map(point =>
-                        <tr>
+                    points.map((point, index) =>
+                        <tr key={index}>
                             <td className='line'>
                                 <div className="pointer" >
                                     <BsFillCircleFill />

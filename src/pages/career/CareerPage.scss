@@ -1,0 +1,13 @@
+.CareerPage{
+    position: relative;
+    .title{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    &__cardContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

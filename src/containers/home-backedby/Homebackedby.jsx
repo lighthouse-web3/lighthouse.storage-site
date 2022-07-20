@@ -1,22 +1,24 @@
 import React from 'react'
+import { mediaUrl } from '../../utils/Data/config';
 import './homebackedby.css'
 
-function Homebackedby() {
-    const organisationLogos = ['protocol_labs.png', 'long-hash-ventures.png', 'Big_Brain.png', 'Fenbushi_Capital.png', 'Formless.png', 'mask_network.svg', 'NGC.png', '2Link.jpg', 'hashcib.png']
+
+
+function Homebackedby({ contentData }) {
+    const organisationLogos = contentData.logos;
     return (
         <div className='section__padding home_backedby_container'>
 
             <div className="title">
-                <p className='gradient__text title__text'>Backed By</p>
+                <p className='gradient__text title__text'>{contentData.title}</p>
 
-                <p className='description__text'>
-                    We are backed by some of the most prestegious organisations
+                <p className='description__text' dangerouslySetInnerHTML={{ __html: contentData.description }}>
                 </p>
             </div>
 
             <div className="logo_container">
-                {organisationLogos.map((logo) =>
-                    <img src={'/BackedBy/' + logo} alt="" className='org_logo' />
+                {organisationLogos.map((logo, index) =>
+                    <img key={index} src={mediaUrl + logo} alt="" className='org_logo' />
                 )}
             </div>
 

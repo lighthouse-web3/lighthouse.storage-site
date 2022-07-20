@@ -3,11 +3,11 @@ import { sendEmail, validateEmail } from '../../utils/services/emailService'
 import { notify } from '../../utils/services/notification'
 import './HomeEmail.css'
 
-function HomeEmail() {
+function HomeEmail({ contentData }) {
     const mailInput = useRef()
     const subscribeEmail = () => {
         let userEmail = mailInput?.current?.value || null
-        console.log(userEmail)
+
 
         if (
             validateEmail(userEmail)
@@ -24,16 +24,15 @@ function HomeEmail() {
         <div className='HomeEmail_container '>
             <div className="title section__padding">
                 <p className='gradient__text title__text'>
-                    Join our list
+                    {contentData.title}
                 </p>
                 <div className="description__text section__padding">
-                    <p>
-                        Subscribe to get the latest news, updates and early access to Lighthouse Beta
+                    <p dangerouslySetInnerHTML={{ __html: contentData.description }}>
                     </p>
                 </div>
                 <div className="description_email">
                     <input ref={mailInput} type="text" placeholder='Enter your Email' />
-                    <button onClick={subscribeEmail}>Contact Me</button>
+                    <button onClick={subscribeEmail}>{contentData.btnText}</button>
                 </div>
             </div>
 
