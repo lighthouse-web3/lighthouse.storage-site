@@ -1,0 +1,35 @@
+.LandingPageCommunity {}
+
+.LandingPageCommunity>.cardContainer {
+    width: 100%;
+    background: #1E2B4B;
+    min-height: 260px;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LandingPageCommunity>.cardContainer>.title {
+    font-size: 1.5rem;
+}
+
+.LandingPageCommunity>.cardContainer>.subtitle {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-family: var(--font-primary);
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 800px) {
+    .LandingPageCommunity>.cardContainer {
+        padding: 10px;
+    }
+
+    .LandingPageCommunity>.cardContainer>.subtitle {
+        text-align: center;
+    }
+}

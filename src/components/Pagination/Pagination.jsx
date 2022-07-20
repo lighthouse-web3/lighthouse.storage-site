@@ -5,24 +5,22 @@ import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
 
 
-function Pagination({ orignalData, setCurrentData, itemsPerPage }) {
-    const [pageCount, setPageCount] = useState(1);
+
+function Pagination({ data, setCurrentData, itemsPerPage }) {
+    const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
     const handlePageClick = (event) => {
-        const newOffset = (event.selected * itemsPerPage) % orignalData.length;
+        const newOffset = (event.selected * itemsPerPage) % data.length;
         setItemOffset(newOffset);
     };
     useEffect(() => {
-        console.log(orignalData, setCurrentData, itemsPerPage)
-        if (orignalData?.length > 0) {
+        if (data?.length > 0) {
             const endOffset = itemOffset + itemsPerPage;
-            const newData = orignalData?.slice(itemOffset, endOffset);
-            console.log(newData, '----');
-            setCurrentData(newData);
-            console.log('newOffset', orignalData, itemsPerPage);
-            setPageCount(Math.ceil(orignalData.length / itemsPerPage));
+            setCurrentData(data?.slice(itemOffset, endOffset));
+            setPageCount(Math.ceil(data.length / itemsPerPage));
         }
-    }, [itemOffset, itemsPerPage, orignalData]);
+    }, [itemOffset, itemsPerPage, data]);
+
     return (
         <ReactPaginate
             className="pagination"

@@ -2,8 +2,10 @@ import React from 'react'
 import { Featurepoint } from '../../components'
 import './homekeyfeatures.css'
 
+
 function Homekeyfeatures({ contentData }) {
     const features = contentData;
+
     return (
         <div className='section__padding homekeyfeatures_container' id="features">
             <div className="title">

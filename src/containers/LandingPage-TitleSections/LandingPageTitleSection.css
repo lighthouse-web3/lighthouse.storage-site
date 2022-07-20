@@ -1,0 +1,58 @@
+.LandingPageTitleSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.LandingPageTitleSection>.title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.LandingPageTitleSection>.title>.subtext {
+    color: white;
+}
+
+.LandingPageTitleSection>.cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.LandingPageTitleSection>.cardContainer>.card {
+    width: 25%;
+    min-height: 20vw;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    padding: 1rem;
+}
+
+.LandingPageTitleSection>.cardContainer>.card>.icon {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.LandingPageTitleSection>.cardContainer>.card>.content {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 0px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .LandingPageTitleSection>.cardContainer {
+        flex-direction: column;
+    }
+
+    .LandingPageTitleSection>.cardContainer>.card {
+        width: 100%;
+    }
+
+}

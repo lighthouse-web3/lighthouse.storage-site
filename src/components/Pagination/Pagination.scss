@@ -1,5 +1,9 @@
+
+
 .pagination {
     list-style: none;
+    margin-top: 2rem;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,12 +30,19 @@
     .next {
       font-weight: 600;
       margin: 0rem 1rem;
-      color: white;
+
+      a > svg > polyline{
+        stroke: white;
+
+      }
+
     }
 
     .previous.disabled,
     .next.disabled {
-      color: rgba(255, 255, 255, 0.578);
+
+      color: var(--clr-roadmap-text);
+
     }
   }
 
