@@ -7,38 +7,15 @@ import Pagination from '../../components/Pagination/Pagination'
 
 
 
-const questions = [
-    {
-        question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta.",
-        answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil rerum mollitia magni iste neque totam quam esse, laudantium dicta minima."
-    },
-    {
-        question: "Lorem ipsum  amet consectetur adipisicing elit.Dicta.",
-        answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil rerum mollitia magni iste neque totam quam esse, laudantium dicta minima."
-    },
-    {
-        question: "elit corporis maxime, repudiandae nam voluptas at totam eligendi odio consequuntur",
-        answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil rerum mollitia magni iste neque totam quam esse, laudantium dicta minima."
-    },
-    {
-        question: "deleniti eaque minima praesentium eius ea modi. Quae, fuga maxime",
-        answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil rerum mollitia magni iste neque totam quam esse, laudantium dicta minima."
-    },
-    {
-        question: "consequuntur, ducimus ",
-        answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil rerum mollitia magni iste neque totam quam esse, laudantium dicta minima."
-    },
-
-]
-
-function FAQContainer() {
+function FAQContainer({ contentData }) {
+    const questions = contentData;
     const [searchWord, setSearchWord] = useState('');
-    // const [currentQuestions, setCurrentQuestions] = useState(questions);
+    const [currentQuestions, setCurrentQuestions] = useState(questions);
     const [filteredQuestions, setFilteredQuestions] = useState(questions);
 
     useEffect(() => {
         if (searchWord.length > 0) {
-            let filteredQuestions = questions.filter((item) => item.question.includes(searchWord));
+            let filteredQuestions = questions.filter((item) => item?.['attributes']?.question?.includes(searchWord));
             setFilteredQuestions(filteredQuestions);
         } else {
             setFilteredQuestions(questions)
@@ -70,7 +47,7 @@ function FAQContainer() {
                 <div className="faq__contentContainer">
                     <div className="questionsContainer">
                         {
-                            filteredQuestions.map((question, key) => <QuestionBox question={question} key={key} />)
+                            currentQuestions.map((question, key) => <QuestionBox question={question} key={key} />)
                         }
 
                     </div>
@@ -87,7 +64,7 @@ function FAQContainer() {
 
             </div>
 
-            {/* <Pagination data={filteredQuestions} setCurrentData={setCurrentQuestions} itemsPerPage={3} /> */}
+            <Pagination data={filteredQuestions} setCurrentData={setCurrentQuestions} itemsPerPage={3} />
 
         </div>
     )
