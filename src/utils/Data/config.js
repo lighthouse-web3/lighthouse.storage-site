@@ -156,19 +156,18 @@ export const data = {
 
           tweeter: "https://twitter.com/ArpitBindal4",
         },
-        // {
-        //   name: "Sunidhi",
-        //   image: "/team/sunidhi.png",
-        //   linkedin: "https://www.linkedin.com/in/sunidhi-chawla-32bb391a5",
-        // },
+        {
+          name: "Perfection Loveday",
+          image: "/team/tejiri_odiase.png",
+        },
         {
           name: "Ayobami Oki",
           image: "/team/Ayobami_oki.png",
         },
-        // {
-        //   name: "Tejiri Odiase",
-        //   image: "/team/tejiri_odiase.png",
-        // },
+        {
+          name: "Utkarsh Mehrotra",
+          image: "/team/a10.png",
+        },
       ],
     },
     backedBy: {
