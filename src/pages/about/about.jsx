@@ -31,9 +31,7 @@ function AboutPage() {
     }, [])
     return (
         <div className="aboutpage">
-            {
-                console.log(contentData)
-            }
+
             {
                 showPage && <>
                     <div className="bg_pattern2"></div>

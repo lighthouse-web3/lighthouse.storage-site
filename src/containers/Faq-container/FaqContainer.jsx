@@ -9,6 +9,7 @@ import Pagination from '../../components/Pagination/Pagination'
 
 function FAQContainer({ contentData }) {
     const questions = contentData;
+    console.log(questions);
     const [searchWord, setSearchWord] = useState('');
     const [currentQuestions, setCurrentQuestions] = useState(questions);
     const [filteredQuestions, setFilteredQuestions] = useState(questions);
@@ -21,6 +22,8 @@ function FAQContainer({ contentData }) {
             setFilteredQuestions(questions)
         }
     }, [searchWord])
+
+
 
     return (
         <div className="FAQContainer section__padding" id="faq">
@@ -47,7 +50,7 @@ function FAQContainer({ contentData }) {
                 <div className="faq__contentContainer">
                     <div className="questionsContainer">
                         {
-                            currentQuestions.map((question, key) => <QuestionBox question={question} key={key} />)
+                            currentQuestions.length > 0 && currentQuestions.map((question, key) => <QuestionBox question={question} key={key} />)
                         }
 
                     </div>

@@ -13,8 +13,8 @@ function FAQPage() {
         (async () => {
             try {
                 const res = await axios.get(`${baseUrl}/faqs`);
-                res['status'] === 200 && (setContentData(res['data']?.['data']));
-                console.log(contentData);
+                res['status'] === 200 && (setContentData(res?.['data']?.['data']));
+                console.log(contentData, 'CONTENT DATA');
                 setShowPage(true);
             } catch (error) {
             }
@@ -22,14 +22,20 @@ function FAQPage() {
     }, [])
     return (
         <div className="FAQPage">
-            <div className="bg_pattern2"></div>
-            <div className="bg_pattern3"></div>
-            <div className="bg_pattern4"></div>
-            <div className="bg_pattern5"></div>
-            <Header />
-            <FAQContainer contentData={contentData} />
-            <Footer />
-            <DiscordFloat />
+            {
+                showPage && <>
+                    <div className="bg_pattern2"></div>
+                    <div className="bg_pattern3"></div>
+                    <div className="bg_pattern4"></div>
+                    <div className="bg_pattern5"></div>
+                    <Header />
+                    <FAQContainer contentData={contentData} />
+                    <Footer />
+                    <DiscordFloat />
+                </>
+
+            }
+
         </div>
     )
 }
