@@ -21,6 +21,11 @@ const links = [
         href: ''
     },
     {
+        title: "FAQs",
+        path: '/faq',
+        href: ''
+    },
+    {
         title: "Contact us",
         path: '',
         href: 'https://airtable.com/shrPFC2TgojuOAYO4'

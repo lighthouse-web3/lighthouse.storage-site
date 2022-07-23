@@ -1,47 +1,32 @@
-import React from 'react'
-import { RecentBlogCard } from '../../components'
+import React from "react";
+import { RecentBlogCard } from "../../components";
 
-function BlogRecent() {
+const recentBlogs = (blogs) => {
+    const sorter = (a, b) => {
+        console.log(a, b);
+        return (
+            new Date(a?.attributes?.publishedAt).getTime() -
+            new Date(b?.attributes?.publishedAt).getTime()
+        );
+    };
+    let sortedBlogs = blogs.sort(sorter).reverse();
+    return sortedBlogs.slice(0, 3);
+};
 
-    const recentBlogs = [
-        {
-            title: 'How to store data on IPFS',
-            image: 'https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg',
-            date: '8th July 2022',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sunt molestias inventore nobis similique esse earum vero recusandae! Esse impedit laborum ipsum voluptatem earum temporibus perspiciatis dolore nobis, cumque at soluta accusamus maiores dolor veritatis magni ipsa quam rerum? Minima aspernatur mollitia debitis unde repudiandae tenetur tempora, autem nemo ab.'
-        },
-        {
-            title: 'How to store data on IPFS',
-            image: 'https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg',
-            date: '8th July 2022',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sunt molestias inventore nobis similique esse earum vero recusandae! Esse impedit laborum ipsum voluptatem earum temporibus perspiciatis dolore nobis, cumque at soluta accusamus maiores dolor veritatis magni ipsa quam rerum? Minima aspernatur mollitia debitis unde repudiandae tenetur tempora, autem nemo ab.'
-        },
-        {
-            title: 'How to store data on IPFS',
-            image: 'https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg',
-            date: '8th July 2022',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sunt molestias inventore nobis similique esse earum vero recusandae! Esse impedit laborum ipsum voluptatem earum temporibus perspiciatis dolore nobis, cumque at soluta accusamus maiores dolor veritatis magni ipsa quam rerum? Minima aspernatur mollitia debitis unde repudiandae tenetur tempora, autem nemo ab.'
-        },
-        {
-            title: 'How to store data on IPFS',
-            image: 'https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg',
-            date: '8th July 2022',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sunt molestias inventore nobis similique esse earum vero recusandae! Esse impedit laborum ipsum voluptatem earum temporibus perspiciatis dolore nobis, cumque at soluta accusamus maiores dolor veritatis magni ipsa quam rerum? Minima aspernatur mollitia debitis unde repudiandae tenetur tempora, autem nemo ab.'
-        },
-        {
-            title: 'How to store data on IPFS',
-            image: 'https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg',
-            date: '8th July 2022',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sunt molestias inventore nobis similique esse earum vero recusandae! Esse impedit laborum ipsum voluptatem earum temporibus perspiciatis dolore nobis, cumque at soluta accusamus maiores dolor veritatis magni ipsa quam rerum? Minima aspernatur mollitia debitis unde repudiandae tenetur tempora, autem nemo ab.'
-        },
-    ]
-    const popularBlogs = []
+const popularBlogs = (blogs) => {
+    let popularBlogs = blogs.filter(
+        (blog) => blog?.attributes?.otherInfo?.popular
+    );
+    return popularBlogs.slice(0, 3);
+};
+
+function BlogRecent({ allBlogs }) {
     return (
         <div className="BlogRecent">
-            <RecentBlogCard title={'Recent Post'} blogs={recentBlogs} />
-            <RecentBlogCard title={'Popular Post'} blogs={recentBlogs} />
+            <RecentBlogCard title={"Recent Post"} blogs={recentBlogs(allBlogs)} />
+            <RecentBlogCard title={"Popular Post"} blogs={popularBlogs(allBlogs)} />
         </div>
-    )
+    );
 }
 
-export default BlogRecent
+export default BlogRecent;

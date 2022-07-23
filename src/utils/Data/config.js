@@ -1,6 +1,5 @@
-// export const strapiAPIToken =
-//   "195be33992006e65e5fccb37fd13e981a5cb6abd6fcc66e2a8fbc489678692a7880660efbbfecf894160428ad0dde670c94d6fb15670e3f90ccb24e6f6065cb12b67e3d7696ce50851b9477cfbab65799bdc49c1653134585fe505134249f156844f6f23b477859331cff648ca00c6839f4f26a02debd4f56e78bb7f5ee6500f";
-
+// export const baseUrl = "http://localhost:1337/api";
+// export const mediaUrl = "http://localhost:1337";
 export const baseUrl = "https://cms.lighthouse.storage/api";
 export const mediaUrl = "https://cms.lighthouse.storage";
 

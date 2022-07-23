@@ -17,9 +17,9 @@ function FAQContainer({ contentData }) {
     useEffect(() => {
         if (searchWord.length > 0) {
             let filteredQuestions = questions.filter((item) => item?.['attributes']?.question?.includes(searchWord));
-            setFilteredQuestions(filteredQuestions);
+            setCurrentQuestions(filteredQuestions);
         } else {
-            setFilteredQuestions(questions)
+            setCurrentQuestions(questions)
         }
     }, [searchWord])
 
@@ -67,7 +67,7 @@ function FAQContainer({ contentData }) {
 
             </div>
 
-            <Pagination data={filteredQuestions} setCurrentData={setCurrentQuestions} itemsPerPage={3} />
+            {/* <Pagination data={filteredQuestions} setCurrentData={setCurrentQuestions} itemsPerPage={3} /> */}
 
         </div>
     )
