@@ -1,0 +1,38 @@
+.QuestionBox{
+    --questionBox-border-clr: #DDDDDD;
+    --questionBox-question-clr: #0779E4;
+    width: 100%;
+    border: 1px solid var(--questionBox-border-clr);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    color: white;
+    font-family: var(--primary-font);
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+
+        .question{
+            text-align: left;
+            flex: 1;
+        }
+
+        .icon{
+            width: 10%;
+            text-align: right;
+            font-size: 2rem;
+            
+        }
+    }
+
+    .answer{
+        width: 90%;
+        color: white;
+        font-family: var(--font-primary);
+        opacity: 0.9;
+    }
+}

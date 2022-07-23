@@ -1,14 +1,13 @@
 import React, { useRef } from 'react'
-import { data } from '../../utils/Data/config';
 import { sendEmail, validateEmail } from '../../utils/services/emailService'
 import { notify } from '../../utils/services/notification'
 import './HomeEmail.css'
-const contentData = data['Home']['email'];
-function HomeEmail() {
+
+function HomeEmail({ contentData }) {
     const mailInput = useRef()
     const subscribeEmail = () => {
         let userEmail = mailInput?.current?.value || null
-        console.log(userEmail)
+
 
         if (
             validateEmail(userEmail)

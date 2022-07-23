@@ -2,11 +2,12 @@ import React from 'react'
 import './AngelCard.css'
 import { IoLogoLinkedin } from 'react-icons/io'
 import { AiFillTwitterSquare } from 'react-icons/ai'
+import { mediaUrl } from '../../utils/Data/config'
 
 function Angelcard({ name, designation, linkedin, tweeter, image }) {
     return (
         <div className='angel_card_container'>
-            <img src={image} alt="" />
+            <img src={mediaUrl + image} alt="" />
 
             <div className='member_info'>
                 <p className="member_name">

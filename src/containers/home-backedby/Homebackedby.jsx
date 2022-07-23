@@ -1,10 +1,10 @@
 import React from 'react'
-import { data } from '../../utils/Data/config';
+import { mediaUrl } from '../../utils/Data/config';
 import './homebackedby.css'
 
-const contentData = data['About']['backedBy'];
 
-function Homebackedby() {
+
+function Homebackedby({ contentData }) {
     const organisationLogos = contentData.logos;
     return (
         <div className='section__padding home_backedby_container'>
@@ -17,8 +17,8 @@ function Homebackedby() {
             </div>
 
             <div className="logo_container">
-                {organisationLogos.map((logo) =>
-                    <img src={logo} alt="" className='org_logo' />
+                {organisationLogos.map((logo, index) =>
+                    <img key={index} src={mediaUrl + logo} alt="" className='org_logo' />
                 )}
             </div>
 

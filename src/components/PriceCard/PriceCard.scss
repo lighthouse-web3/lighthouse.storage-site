@@ -1,0 +1,127 @@
+
+.PriceCard {
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid white;
+  padding: 20px;
+  color: white;
+  font-family: var(--font-primary);
+
+  hr {
+    margin: 1rem 0px;
+    opacity: 0.85;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p:nth-of-type(1) {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    p:nth-of-type(2) {
+      font-weight: 600;
+      font-size: 2rem;
+
+      .oldPrice {
+        font-size: 1.5rem;
+        text-decoration: line-through;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .line {
+      width: 10%;
+      height: 2px;
+      background: white;
+    }
+
+    .content {
+      color: white;
+      font-weight: 400;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0.6;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+
+  &__features {
+    .notavailable {
+      opacity: 0.6;
+    }
+
+    .feature {
+      .icon {
+        border-radius: 100%;
+        border: 1px solid white;
+        background: transparent;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0px;
+    }
+  }
+
+  &__button {
+    background: var(--gradient);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    a{
+      color: white !important;
+    font-weight: 600;
+    font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .PriceCard {
+      width: 100%;
+    margin: 2rem 0rem;
+    padding: 10px;
+
+    &__title {
+      p:nth-of-type(1) {
+        font-size: 1.5rem;
+      }
+      p:nth-of-type(2) {
+        font-size: 1.6rem;
+        .oldPrice {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &__subtitle {
+      .content {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -4,6 +4,40 @@ import { RiMenuFill, RiCloseLine } from "react-icons/ri";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
+const links = [
+    {
+        title: "Home",
+        path: '/',
+        href: ''
+    },
+    {
+        title: "About Us",
+        path: '/about-us',
+        href: ''
+    },
+    {
+        title: "Blogs",
+        path: '/blogs',
+        href: ''
+    },
+    {
+        title: "FAQs",
+        path: '/faq',
+        href: ''
+    },
+    {
+        title: "Contact us",
+        path: '',
+        href: 'https://airtable.com/shrPFC2TgojuOAYO4'
+    },
+    {
+        title: "Documentation",
+        path: '',
+        href: 'https://lighthouse-storage.gitbook.io/lighthouse/'
+    },
+]
+
+
 function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [scrollTop, setScrollTop] = useState();
@@ -29,42 +63,25 @@ function Header() {
                   <p className="gradient__text">Lighthouse</p>
               </div>
               <div className="navbar_links_container">
-                  <p>
-                      <a
-                          onClick={() => {
-                              _navigate("/");
-                          }}
-                      >
-                          Home
-                      </a>
-                  </p>
-                  <p>
-                      <a
-                          onClick={() => {
-                              _navigate("/about-us");
-                          }}
-                      >
-                          About us
-                      </a>
-                  </p>
-                  <p>
-                      <a
-                          href="https://airtable.com/shrPFC2TgojuOAYO4"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                      >
-                          Contact us
-                      </a>
-                  </p>
-                  <p>
-                      <a
-                          href="https://lighthouse-storage.gitbook.io/lighthouse/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                      >
-                          Documentation
-                      </a>
-                  </p>
+                    {
+                        links.map((link) => <p>
+                            {
+                                link.path.length > 0 ? <a
+                                    onClick={() => {
+                                        _navigate(link.path);
+                                    }}
+                                >
+                                    {link.title}
+                                </a> : <a
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                        {link.title}
+                                    </a>
+                            }
+                        </p>)
+                    }
               </div>
           </div>
           <div className="navbar__button">
@@ -98,42 +115,28 @@ function Header() {
 
               {toggleMenu && (
                   <div className="mobile_menu_container scale-up-tr">
-                      <p>
-                          <a
-                              onClick={() => {
-                                  _navigate("/");
-                              }}
-                          >
-                              Home
-                          </a>
-                      </p>
-                      <p>
-                          <a
-                              onClick={() => {
-                                  _navigate("/about-us");
-                              }}
-                          >
-                              About us
-                          </a>
-                      </p>
-                      <p>
-                          <a
-                              href="https://airtable.com/shrPFC2TgojuOAYO4"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                          >
-                              Contact us
-                          </a>
-                      </p>
-                      <p>
-                          <a
-                              href="https://lighthouse-storage.gitbook.io/lighthouse/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                          >
-                              Documentation
-                          </a>
-                      </p>
+
+                        {
+                            links.map((link) => <p>
+                                {
+                                    link.path.length > 0 ? <a
+                                        onClick={() => {
+                                            _navigate(link.path);
+                                        }}
+                                    >
+                                        {link.title}
+                                    </a> : <a
+                                        href={link.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                            {link.title}
+                                        </a>
+                                }
+                            </p>)
+                        }
+
+
                       <p className="navbar__mobile__button">
                           <button
                               onClick={() =>

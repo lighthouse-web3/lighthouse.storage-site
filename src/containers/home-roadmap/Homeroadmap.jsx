@@ -1,11 +1,10 @@
 import React from 'react'
 import RoadmapQuaterMobile from '../../components/roadmap-quater-mobile/RoadmapQuaterMobile';
 import Roadmapquater from '../../components/roadmap-quater/Roadmapquater'
-import { data } from '../../utils/Data/config';
 import './homeroadmap.css'
-const contentData = data['Home']['roadmapData'];
 
-function Homeroadmap() {
+
+function Homeroadmap({ contentData }) {
     const { innerWidth: width } = window;
 
     const roadmapData = contentData;

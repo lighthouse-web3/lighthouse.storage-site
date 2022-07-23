@@ -1,3 +1,8 @@
+// export const baseUrl = "http://localhost:1337/api";
+// export const mediaUrl = "http://localhost:1337";
+export const baseUrl = "https://cms.lighthouse.storage/api";
+export const mediaUrl = "https://cms.lighthouse.storage";
+
 export const data = {
   Global: {
     address: "Lighthouse - Singapore",

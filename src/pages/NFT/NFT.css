@@ -1,0 +1,24 @@
+.LandingPage_NFT {
+    position: relative;
+}
+
+.LandingPage_NFT>.bg_pattern2 {
+    top: 0;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.LandingPage_NFT>.bg_pattern3 {
+    top: 110vh;
+    opacity: 0.4;
+}
+
+.LandingPage_NFT>.bg_pattern4 {
+    top: 250vh;
+    opacity: 0.4;
+}
+
+.LandingPage_NFT>.bg_pattern5 {
+
+    opacity: 0.4;
+}
