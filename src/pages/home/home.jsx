@@ -56,8 +56,9 @@ function HomePage() {
                         contentData['keyDiffrence'] && <Homekeydiffrence contentData={contentData['keyDiffrence']} />
                     }
                     {
-                        contentData['roadmapData'] && <Homeroadmap contentData={contentData['roadmapData']} />
+                        contentData['backedBy'] && <Homebackedby contentData={contentData['backedBy']} />
                     }
+
                     {
                         contentData['email'] && <HomeEmail contentData={contentData['email']} />
                     }

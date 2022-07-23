@@ -4,6 +4,7 @@ import {
     Footer,
     Hometeam,
     Homebackedby,
+    Homeroadmap,
 } from "../../containers";
 import './about.css'
 
@@ -42,15 +43,15 @@ function AboutPage() {
                         contentData['team'] && <Hometeam contentData={contentData['team']} />
                     }
                     {
-                        contentData['backedBy'] && <Homebackedby contentData={contentData['backedBy']} />
+                        contentData['roadmapData'] && <Homeroadmap contentData={contentData['roadmapData']} />
                     }
                     {
                         contentData['angel'] && <AboutAngels contentData={contentData['angel']} />
                     }
 
-                    {
+                    {/* {
                         contentData['testimonial'] && <Testimonials contentData={contentData['testimonial']} />
-                    }
+                    } */}
                     {
                         contentData['pricing'] && <Pricing contentData={contentData['pricing']} />
                     }
