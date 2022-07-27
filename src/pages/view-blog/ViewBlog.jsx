@@ -14,6 +14,8 @@ import { baseUrl, mediaUrl } from "../../utils/Data/config";
 import "./ViewBlog.scss";
 import ReactMarkdown from "react-markdown";
 import { notify } from '../../utils/services/notification'
+import { Helmet } from "react-helmet";
+
 
 
 
@@ -72,6 +74,16 @@ function ViewBlog() {
         <div className="viewBlog">
             {showPage &&
                 <>
+                <Helmet>
+                    <meta property="og:url" content="https://www.lighthouse.storage/" />
+                    <meta property="og:title" content="Lighthouse" />
+                    <meta
+                        property="og:description"
+                        content="Permanent Storage Redefined | store files on decentralized network for lifetime at a fixed price"
+                    />
+                    <meta property="og:image" content="https://www.lighthouse.storage/logo.png" />
+
+                </Helmet>
                 <div className="bg_pattern4"></div>
                 <div className="bg_pattern5"></div>
                 <Header />
