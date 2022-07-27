@@ -135,7 +135,7 @@ function ViewBlog() {
                                 </div>
 
                                 <div className="content">
-                                    <ReactMarkdown children={showBlog?.attributes?.description?.replaceAll('/uploads/', `${mediaUrl}/uploads/`)} />
+                                    <ReactMarkdown linkTarget={'_blank'} children={showBlog?.attributes?.description?.replaceAll('/uploads/', `${mediaUrl}/uploads/`)} />
                                 </div>
 
                                 <div className="author">
