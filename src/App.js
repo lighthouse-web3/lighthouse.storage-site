@@ -25,8 +25,7 @@ function App() {
 
       <Route path="/blogs" element={<Blogs />}></Route>
       <Route path="/career" element={<CareerPage />}></Route>
-      <Route path="/view-blog/:id" element={<ViewBlog />}></Route>
-
+      <Route path="/view-blog/:id/:name" element={<ViewBlog />}></Route>
     </Routes>
   );
 }
