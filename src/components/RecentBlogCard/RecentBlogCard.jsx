@@ -10,7 +10,7 @@ function RecentBlogCard({ title, blogs }) {
             <div className="RecentBlogCard__title">{title}</div>
             <div className="RecentBlogCard__listContainer">
                 {blogs.map((blog, index) => (
-                    <div className="blogCard ptr" key={index} onClick={() => { _navigate(`/view-blog/${blog?.id}/${blog?.attributes?.title?.replaceAll(' ', '_')}`) }}>
+                    <div className="blogCard ptr" key={index} onClick={() => { _navigate(`/view-blog/${blog?.id}/${blog?.attributes?.title?.replaceAll(' ', '-')}`) }}>
                         <p className="title">{blog?.attributes?.title}</p>
                         <p className="date">
                             <MdUpdate />
