@@ -76,12 +76,12 @@ function ViewBlog() {
                 <>
                 <Helmet>
                     <meta property="og:url" content="https://www.lighthouse.storage/" />
-                    <meta property="og:title" content="Lighthouse" />
+                    <meta property="og:title" content={showBlog?.attributes?.title || 'Lighthouse'} />
                     <meta
                         property="og:description"
-                        content="Permanent Storage Redefined | store files on decentralized network for lifetime at a fixed price"
+                        content={(showBlog?.attributes?.description.slice(0, 100) + '...') || 'Permanent Storage Redefined | store files on decentralized network for lifetime at a fixed price'}
                     />
-                    <meta property="og:image" content="https://www.lighthouse.storage/logo.png" />
+                    <meta property="og:image" content={(mediaUrl + showBlog?.attributes?.coverImage?.data?.attributes?.url) || "https://www.lighthouse.storage/logo.png"} />
 
                 </Helmet>
                 <div className="bg_pattern4"></div>
