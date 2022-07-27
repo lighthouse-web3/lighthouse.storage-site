@@ -6,7 +6,7 @@ import './BlogCard.scss'
 function BlogCard({ blog }) {
     const _navigate = useNavigate();
     return (
-        <div className="BlogCard ptr" onClick={() => { _navigate(`/view-blog/${blog?.id}/${blog?.attributes?.title?.replaceAll(' ', '_')}`) }}>
+        <div className="BlogCard ptr" onClick={() => { window.open(`/view-blog/${blog?.id}/${blog?.attributes?.title?.replaceAll(' ', '-')}`, '_blank') }}>
             <img src={mediaUrl + blog?.attributes?.coverImage?.data?.attributes?.url} alt={''} />
 
             <div className="contentContainer">
